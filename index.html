@@ -25,8 +25,36 @@
                 <a href="#information">Information</a>
                 <a href="#contacts">Contacts</a>
             </nav>
+            <!-- Hamburger Button (mobile only) -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Mobile Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-hidden="true">
+        <div class="sidebar-header">
+            <a href="#" class="logo">
+                <img src="src/img/logo-clubit.png" alt="Logo" class="logo-img">
+            </a>
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav class="sidebar-links">
+            <a href="#home" class="sidebar-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#about" class="sidebar-link"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="#registration" class="sidebar-link"><i class="fa-solid fa-file-pen"></i> Registration</a>
+            <a href="#information" class="sidebar-link"><i class="fa-solid fa-newspaper"></i> Information</a>
+            <a href="#contacts" class="sidebar-link"><i class="fa-solid fa-envelope"></i> Contacts</a>
+        </nav>
+    </aside>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -113,5 +141,37 @@
         </div>
     </footer>
 
+    <!-- Sidebar Script -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const sidebarClose = document.getElementById('sidebar-close');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        function openSidebar() {
+            sidebar.classList.add('is-open');
+            overlay.classList.add('is-active');
+            hamburgerBtn.setAttribute('aria-expanded', 'true');
+            sidebar.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('is-open');
+            overlay.classList.remove('is-active');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            sidebar.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+
+        // Close sidebar when a link is clicked
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+    </script>
 </body>
 </html>

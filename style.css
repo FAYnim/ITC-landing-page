@@ -293,11 +293,15 @@ p {
 .discover-container.left-box {
     margin-right: auto;
     padding: 40px 60px 60px max(20px, calc((100vw - var(--container-width)) / 2 + 20px));
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
 }
 
 .discover-container.right-box {
     margin-left: auto;
     padding: 40px max(20px, calc((100vw - var(--container-width)) / 2 + 20px)) 60px 60px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
 }
 
 .discover-content {

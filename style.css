@@ -22,9 +22,6 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg-dark);
-    background-image: url('src/img/background-body.png');
-    background-repeat: repeat;
-    background-attachment: fixed;
     color: var(--text-main);
     line-height: 1.6;
     overflow-x: hidden;
@@ -152,7 +149,7 @@ p {
 /* === Hero Section === */
 .hero {
     padding: 150px 0 100px;
-    background-image: url('src/img/background-hero.png');
+    background-image: linear-gradient(to bottom, rgba(18, 48, 103, 0) 60%, rgba(18, 48, 103, 1) 100%), url('src/img/background-hero.png');
     background-size: cover;
     background-position: center top;
     background-repeat: no-repeat;
@@ -242,8 +239,8 @@ p {
 
 .features-container {
     display: flex;
-    gap: 40px;
-    justify-content: center;
+    gap: 80px;
+    justify-content: space-between;
 }
 
 .feature-card {
@@ -292,8 +289,6 @@ p {
     overflow: hidden;
     margin-bottom: 60px;
     max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .discover-text-box {
@@ -314,8 +309,19 @@ p {
     object-fit: cover;
 }
 
+.left-align {
+    margin-left: 0;
+    margin-right: auto;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .right-align {
     flex-direction: row-reverse;
+    margin-left: auto;
+    margin-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .mt-large {

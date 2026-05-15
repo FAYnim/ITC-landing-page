@@ -940,7 +940,7 @@ p {
 
 .floating-img-top-right {
     position: absolute;
-    top: -40px;
+    top: -100px;
     right: -30px;
     width: 250px;
     border-radius: 10px;

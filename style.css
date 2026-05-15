@@ -1078,3 +1078,226 @@ p {
         grid-template-columns: 1fr;
     }
 }
+
+/* === About Page Styles === */
+.about-hero {
+    position: relative;
+    padding: 200px 0 100px;
+    background-image: url('https://placehold.co/1920x800/123067/F3FBFA?text=Background');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.about-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 48, 103, 0.75);
+    z-index: 1;
+}
+
+.about-hero-container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 40px;
+}
+
+.about-intro-text {
+    max-width: 800px;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    line-height: 1.8;
+}
+
+.about-intro-text p {
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.about-what-is {
+    padding: 80px 0;
+    background-color: #0f2557;
+}
+
+.about-what-is-container {
+    max-width: 900px;
+}
+
+.about-what-is h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-what-is p {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.about-list {
+    list-style: none;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+.about-list li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-list li::before {
+    content: '- ';
+    position: absolute;
+    left: -15px;
+}
+
+.about-divisi {
+    padding: 80px 0;
+    background-color: var(--bg-dark);
+}
+
+.about-divisi-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.about-divisi-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.about-divisi-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(15, 37, 87, 0.85);
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    backdrop-filter: blur(5px);
+}
+
+.about-divisi-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.about-divisi-box p {
+    color: var(--text-main);
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.about-divisi-box .highlight {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.about-goals {
+    padding: 80px 0;
+    background-color: var(--bg-dark);
+}
+
+.about-goals-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-goals-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.floating-robot {
+    max-width: 100%;
+    width: 400px;
+    animation: float 6s ease-in-out infinite;
+}
+
+.about-goals-content {
+    flex: 1;
+    background-color: #0f2557;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.about-goals-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+
+.about-list-right {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.about-list-right li {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.about-list-right li::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--text-main);
+    border-radius: 50%;
+}
+
+.about-conclusion {
+    padding: 60px 0 100px;
+    text-align: center;
+    background-color: var(--bg-dark);
+}
+
+.about-conclusion-container p {
+    color: var(--text-main);
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.slogan {
+    font-size: 1.8rem;
+    margin-top: 40px;
+    font-style: italic;
+    color: #ffd700;
+}
+
+@media (max-width: 768px) {
+    .about-goals-container {
+        flex-direction: column-reverse;
+    }
+    .about-divisi-box {
+        width: 90%;
+        padding: 20px;
+    }
+    .about-title {
+        font-size: 2.5rem;
+    }
+}

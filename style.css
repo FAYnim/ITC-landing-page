@@ -311,8 +311,8 @@ p {
 
 .feature-content .btn-icon {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
 }
 
 /* === Discover Section === */
@@ -1053,7 +1053,7 @@ p {
     
     .floating-img-top-left, .floating-img-top-right {
         width: 160px;
-        top: -30px;
+        top: -60px;
         left: 20px;
         right: auto;
     }

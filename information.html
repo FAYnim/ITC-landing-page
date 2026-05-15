@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - IT Club</title>
+    <meta name="description" content="Information about Desain Grafik and Programming divisions at IT Club">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="src/img/logo-clubit.png" alt="Logo" class="logo-img">
+            </a>
+            <nav class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#registration">Registration</a>
+                <a href="information.html" class="active" style="color: var(--primary-color);">Information</a>
+                <a href="index.html#contacts">Contacts</a>
+            </nav>
+            <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Sidebar Overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Mobile Sidebar -->
+    <aside class="sidebar" id="sidebar" aria-hidden="true">
+        <div class="sidebar-header">
+            <a href="index.html" class="logo">
+                <img src="src/img/logo-clubit.png" alt="Logo" class="logo-img">
+            </a>
+            <button class="sidebar-close" id="sidebar-close" aria-label="Close menu">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <nav class="sidebar-links">
+            <a href="index.html#home" class="sidebar-link"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="index.html#about" class="sidebar-link"><i class="fa-solid fa-circle-info"></i> About</a>
+            <a href="index.html#registration" class="sidebar-link"><i class="fa-solid fa-file-pen"></i> Registration</a>
+            <a href="information.html" class="sidebar-link" style="color: var(--primary-color);"><i class="fa-solid fa-newspaper" style="color: var(--text-main);"></i> Information</a>
+            <a href="index.html#contacts" class="sidebar-link"><i class="fa-solid fa-envelope"></i> Contacts</a>
+        </nav>
+    </aside>
+
+    <main class="info-page">
+        <!-- Info Hero Section -->
+        <section class="info-hero">
+            <div class="container">
+                <div class="hero-text-overlay">
+                    <h1>Desain Grafik<br>Programming</h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desain Grafik Section -->
+        <section class="info-section">
+            <div class="container info-layout">
+                <!-- Content Box -->
+                <div class="info-box-wrapper left-content">
+                    <img src="src/img/ui-design.png" alt="Design UI" class="floating-img-top-left">
+                    <div class="info-box dark-bg">
+                        <h2>Desain Grafik</h2>
+                        <p>Desain Grafik adalah bagian dari IT Club yang fokus pada desain dan kreativitas visual. Di sini, anggota belajar membuat berbagai karya digital seperti poster, logo, banner, feed sosial media, editing foto, hingga desain untuk kebutuhan event atau promosi sekolah.</p>
+                        <p>DevGraf bukan cuma soal "gambar bagus", tapi juga tentang bagaimana menyampaikan pesan lewat visual yang menarik dan profesional. Anak DesGraf biasanya menggunakan software desain untuk menuangkan ide menjadi karya yang keren dan estetik.</p>
+                    </div>
+                </div>
+                <!-- Icons/Logos -->
+                <div class="info-icons right-icons">
+                    <img src="src/img/after-effect.png" alt="After Effects" class="icon-ae">
+                    <img src="src/img/adobe-illustrator.png" alt="Illustrator" class="icon-ai">
+                    <img src="src/img/adobe-premier.png" alt="Premiere" class="icon-pr">
+                    <img src="src/img/adobe-photoshop.png" alt="Photoshop" class="icon-ps">
+                    <img src="src/img/figma.png" alt="Figma" class="icon-figma">
+                </div>
+            </div>
+            
+            <div class="container info-gallery">
+                <img src="https://placehold.co/600x400/2A2A2A/FFFFFF?text=Design+1" alt="Design Gallery 1" class="gallery-img">
+                <img src="https://placehold.co/600x400/2A2A2A/FFFFFF?text=Design+2" alt="Design Gallery 2" class="gallery-img">
+                <img src="https://placehold.co/600x400/2A2A2A/FFFFFF?text=Design+3" alt="Design Gallery 3" class="gallery-img">
+            </div>
+        </section>
+
+        <!-- Programming Section -->
+        <section class="info-section mt-50">
+            <div class="container info-layout reverse-layout">
+                <!-- Icons/Logos -->
+                <div class="info-icons left-icons">
+                    <img src="https://placehold.co/120x150/264de4/FFFFFF?text=CSS3" alt="CSS3" class="icon-css">
+                    <img src="https://placehold.co/130x130/ffde57/4584b6?text=Python" alt="Python" class="icon-python">
+                    <img src="https://placehold.co/100x110/00599C/FFFFFF?text=C%2B%2B" alt="C++" class="icon-cpp">
+                </div>
+                <!-- Content Box -->
+                <div class="info-box-wrapper right-content">
+                    <img src="https://placehold.co/350x200/1E1E1E/A9C0DE?text=Code+Snippet" alt="Code Snippet" class="floating-img-top-right">
+                    <div class="info-box dark-bg">
+                        <h2>Programming</h2>
+                        <p>Programming adalah bagian dari IT Club yang fokus pada dunia coding dan teknologi. Di sini, anggota belajar membuat website, aplikasi, game sederhana, hingga memahami cara kerja teknologi di balik sebuah sistem digital.</p>
+                        <p>Programming melatih logika, ketelitian, dan kemampuan problem solving. Dari barisan kode yang awalnya terlihat rumit, pelan-pelan berubah jadi project nyata yang bisa dipakai banyak orang. Ibaratnya kayak "merakit otak" untuk sebuah teknologi.</p>
+                        <div class="code-snippet-box">
+                            <div class="mac-dots">
+                                <span class="dot red"></span>
+                                <span class="dot yellow"></span>
+                                <span class="dot green"></span>
+                            </div>
+                            <code>print("Hello, World!")</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container info-gallery">
+                <img src="https://placehold.co/600x400/2A2A2A/FFFFFF?text=Code+1" alt="Programming Gallery 1" class="gallery-img">
+                <img src="https://placehold.co/600x400/2A2A2A/FFFFFF?text=Code+2" alt="Programming Gallery 2" class="gallery-img">
+                <img src="https://placehold.co/600x400/2A2A2A/FFFFFF?text=Code+3" alt="Programming Gallery 3" class="gallery-img">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <img src="src/img/logo-clubit.png" alt="Logo" class="logo-img">
+                        <span class="site-name">IT Club</span>
+                    </a>
+                    <p class="brand-description">Turning Ideas Into Digital Reality. Wadah kreatifitas mahasiswa di bidang teknologi dan desain.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="index.html#home">Home</a></li>
+                            <li><a href="index.html#about">About</a></li>
+                            <li><a href="index.html#registration">Registration</a></li>
+                            <li><a href="information.html">Information</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Divisi</h4>
+                        <ul>
+                            <li><a href="#">Design Graphic</a></li>
+                            <li><a href="#">Programming</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col">
+                        <h4>Social Media</h4>
+                        <div class="social-icons">
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 IT Club. All rights reserved.</p>
+                <p class="footer-credit">Made with <i class="fa-solid fa-heart"></i> for IT Community</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sidebar Script -->
+    <script>
+        const hamburgerBtn = document.getElementById('hamburger-btn');
+        const sidebarClose = document.getElementById('sidebar-close');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        function openSidebar() {
+            sidebar.classList.add('is-open');
+            overlay.classList.add('is-active');
+            hamburgerBtn.setAttribute('aria-expanded', 'true');
+            sidebar.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            sidebar.classList.remove('is-open');
+            overlay.classList.remove('is-active');
+            hamburgerBtn.setAttribute('aria-expanded', 'false');
+            sidebar.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', openSidebar);
+        sidebarClose.addEventListener('click', closeSidebar);
+        overlay.addEventListener('click', closeSidebar);
+
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
+    </script>
+</body>
+</html>

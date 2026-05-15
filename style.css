@@ -860,3 +860,212 @@ p {
 
     /* Simplified for mobile */
 }
+
+/* === Information Page Styles === */
+.info-page {
+    padding-top: 80px;
+    background-color: var(--bg-dark);
+}
+
+.info-hero {
+    height: 50vh;
+    background-image: linear-gradient(to bottom, rgba(18, 48, 103, 0.4) 0%, rgba(18, 48, 103, 1) 100%), url('https://placehold.co/1920x1080/0f2557/A9C0DE?text=Code+Background');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-text-overlay h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: var(--text-main);
+    text-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    line-height: 1.2;
+}
+
+.info-section {
+    padding: 60px 0;
+}
+
+.info-section.mt-50 {
+    margin-top: 50px;
+}
+
+.info-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 40px;
+}
+
+.info-box-wrapper {
+    position: relative;
+    width: 55%;
+}
+
+.info-box {
+    background-color: #0c1a3b;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.info-box h2 {
+    font-size: 2.2rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+    margin-bottom: 15px;
+}
+
+.floating-img-top-left {
+    position: absolute;
+    top: -100px;
+    left: -30px;
+    width: 275px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.floating-img-top-right {
+    position: absolute;
+    top: -40px;
+    right: -30px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 10;
+}
+
+.info-icons {
+    width: 40%;
+    position: relative;
+    height: 350px;
+}
+
+.info-icons img {
+    position: absolute;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+}
+
+.info-icons img:hover {
+    transform: translateY(-10px);
+}
+
+/* Desain Grafik Icons Layout */
+.icon-ai { width: 110px; top: 90px; left: 40px; border-radius: 25px; }
+.icon-ae { width: 70px; top: 20px; right: 80px; border-radius: 15px; }
+.icon-pr { width: 80px; top: 150px; right: 20px; border-radius: 20px; }
+.icon-ps { width: 90px; bottom: 30px; right: 60px; border-radius: 20px; }
+.icon-figma { width: 80px; bottom: 80px; left: 80px; border-radius: 20px; }
+
+/* Programming Icons Layout */
+.icon-css { width: 90px; top: 60px; right: 100px; border-radius: 0; box-shadow: none; }
+.icon-python { width: 110px; top: 160px; left: 40px; border-radius: 50%; box-shadow: none; }
+.icon-cpp { width: 80px; bottom: 40px; right: 80px; border-radius: 0; box-shadow: none; }
+
+.info-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+}
+
+/* Code Snippet Box */
+.code-snippet-box {
+    background-color: #1E1E1E;
+    padding: 12px 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.mac-dots {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dot.red { background-color: #FF5F56; }
+.dot.yellow { background-color: #FFBD2E; }
+.dot.green { background-color: #27C93F; }
+
+.code-snippet-box code {
+    color: #A6E22E;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    .info-layout {
+        flex-direction: column;
+    }
+    
+    .reverse-layout {
+        flex-direction: column-reverse;
+    }
+
+    .info-box-wrapper {
+        width: 100%;
+        margin-top: 50px;
+    }
+    
+    .floating-img-top-left, .floating-img-top-right {
+        width: 160px;
+        top: -30px;
+        left: 20px;
+        right: auto;
+    }
+
+    .info-icons {
+        width: 100%;
+        height: 250px;
+        margin-top: 30px;
+    }
+
+    .icon-ai { width: 90px; top: 40px; left: 10%; }
+    .icon-ae { width: 60px; top: 10px; right: 20%; }
+    .icon-pr { width: 70px; top: 100px; right: 10%; }
+    .icon-ps { width: 80px; bottom: 20px; right: 30%; }
+    .icon-figma { width: 70px; bottom: 40px; left: 20%; }
+
+    .icon-css { width: 70px; top: 40px; right: 20%; }
+    .icon-python { width: 90px; top: 80px; left: 15%; }
+    .icon-cpp { width: 70px; bottom: 20px; right: 30%; }
+    
+    .info-gallery {
+        grid-template-columns: 1fr;
+    }
+}

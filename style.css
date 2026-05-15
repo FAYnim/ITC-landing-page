@@ -929,6 +929,12 @@ p {
     margin-bottom: 15px;
 }
 
+@keyframes float-animation {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
 .floating-img-top-left {
     position: absolute;
     top: -100px;
@@ -937,6 +943,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     z-index: 10;
+    animation: float-animation 4s ease-in-out infinite;
 }
 
 .floating-img-top-right {
@@ -947,6 +954,7 @@ p {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     z-index: 10;
+    animation: float-animation 5s ease-in-out infinite;
 }
 
 .info-icons {
@@ -967,16 +975,16 @@ p {
 }
 
 /* Desain Grafik Icons Layout */
-.icon-ai { width: 110px; top: 90px; left: 40px; border-radius: 25px; }
-.icon-ae { width: 70px; top: 20px; right: 80px; border-radius: 15px; }
-.icon-pr { width: 80px; top: 150px; right: 20px; border-radius: 20px; }
-.icon-ps { width: 90px; bottom: 30px; right: 60px; border-radius: 20px; }
-.icon-figma { width: 80px; bottom: 80px; left: 80px; border-radius: 20px; }
+.icon-ai { width: 160px; top: 25px; left: 0px; border-radius: 25px; }
+.icon-ae { width: 110px; top: 0px; right: 75px; border-radius: 15px; }
+.icon-pr { width: 110px; top: 180px; right: 170px; border-radius: 20px; }
+.icon-ps { width: 100px; bottom: -55px; right: 250px; border-radius: 20px; }
+.icon-figma { width: 140px; bottom: -70px; left: -100px; border-radius: 20px; }
 
 /* Programming Icons Layout */
-.icon-css { width: 90px; top: 60px; right: 100px; border-radius: 0; box-shadow: none; }
-.icon-python { width: 110px; top: 160px; left: 40px; border-radius: 50%; box-shadow: none; }
-.icon-cpp { width: 80px; bottom: 40px; right: 80px; border-radius: 0; box-shadow: none; }
+.icon-css { width: 130px; top: -50px; right: 75px; border-radius: 0; box-shadow: none; }
+.icon-python { width: 110px; top: 130px; left: 80px; border-radius: 50%; box-shadow: none; }
+.icon-cpp { width: 90px; bottom: -45px; right: 80px; border-radius: 0; box-shadow: none; }
 
 .info-gallery {
     display: grid;

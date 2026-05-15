@@ -131,6 +131,7 @@ p {
     width: 100%;
     top: 0;
     z-index: 100;
+    background: transparent;
 }
 
 .nav-container {
@@ -863,7 +864,6 @@ p {
 
 /* === Information Page Styles === */
 .info-page {
-    padding-top: 80px;
     background-color: var(--bg-dark);
 }
 
@@ -876,6 +876,7 @@ p {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 100px;
     margin-bottom: 50px;
 }
 

@@ -869,7 +869,7 @@ p {
 
 .info-hero {
     height: 50vh;
-    background-image: linear-gradient(to bottom, rgba(18, 48, 103, 0.4) 0%, rgba(18, 48, 103, 1) 100%), url('https://placehold.co/1920x1080/0f2557/A9C0DE?text=Code+Background');
+    background-image: linear-gradient(to bottom, rgba(18, 48, 103, 0.4) 0%, rgba(18, 48, 103, 1) 100%), url('src/img/background-code.png');
     background-size: cover;
     background-position: center;
     display: flex;

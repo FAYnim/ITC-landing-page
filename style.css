@@ -1083,7 +1083,7 @@ p {
 .about-hero {
     position: relative;
     padding: 200px 0 100px;
-    background-image: url('https://placehold.co/1920x800/123067/F3FBFA?text=Background');
+    background-image: url('src/img/background-about.png');
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -1095,7 +1095,7 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(18, 48, 103, 0.75);
+    background: linear-gradient(to bottom, rgba(18, 48, 103, 0.7) 0%, var(--bg-dark) 100%);
     z-index: 1;
 }
 
@@ -1127,11 +1127,30 @@ p {
 
 .about-what-is {
     padding: 80px 0;
-    background-color: #0f2557;
+    background-color: var(--bg-dark);
 }
 
 .about-what-is-container {
-    max-width: 900px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0;
+    padding: 0;
+}
+
+.about-what-is-content {
+    background-color: #0A1931;
+    padding: 50px;
+    border-radius: 0 20px 20px 0;
+    width: 60%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.about-what-is-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-what-is h2 {
@@ -1293,6 +1312,18 @@ p {
     .about-goals-container {
         flex-direction: column-reverse;
     }
+    .about-what-is-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about-what-is-img {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .about-what-is-content {
+        width: 100%;
+        padding: 30px;
+    }
     .about-divisi-box {
         width: 90%;
         padding: 20px;
@@ -1300,4 +1331,4 @@ p {
     .about-title {
         font-size: 2.5rem;
     }
-}
+}

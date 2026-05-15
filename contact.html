@@ -3,104 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registration - IT Club</title>
-    <meta name="description" content="Prasyarat pendaftaran dan bergabung dengan IT Club">
+    <title>Contact Us - IT Club</title>
+    <meta name="description" content="Contact Information for IT Club">
     <link rel="icon" type="image/png" href="src/img/logo-clubit.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .registration-hero {
-            height: 50vh;
-            background-image: linear-gradient(to bottom, rgba(18, 48, 103, 0.6) 0%, var(--bg-dark) 100%), url('src/img/background-hero.png');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding-top: 80px;
-        }
-
-        .registration-hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            color: var(--text-main);
-            text-shadow: 0 5px 15px rgba(0,0,0,0.5);
-            line-height: 1.2;
-            margin-bottom: 20px;
-        }
-
-        .registration-hero p {
-            font-size: 1.2rem;
-            color: var(--text-main);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .registration-section {
-            padding: 80px 0;
-            background-color: var(--bg-dark);
-        }
-
-        .prerequisite-card {
-            background-color: #0A1931;
-            padding: 50px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .prerequisite-card h2 {
-            font-size: 2.2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            color: var(--text-main);
-        }
-
-        .prerequisite-list {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 40px;
-        }
-
-        .prerequisite-list li {
-            font-size: 1.1rem;
-            margin-bottom: 20px;
-            position: relative;
-            padding-left: 35px;
-            color: var(--text-main);
-            line-height: 1.6;
-        }
-
-        .prerequisite-list li i {
-            position: absolute;
-            left: 0;
-            top: 4px;
-            color: #A6E22E; /* Green color for checkmarks */
-            font-size: 1.2rem;
-        }
-
-        .registration-cta {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        @media (max-width: 768px) {
-            .registration-hero h1 {
-                font-size: 2.5rem;
-            }
-            .prerequisite-card {
-                padding: 30px;
-            }
-        }
-    </style>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="navbar">
+    <header class="navbar" style="background-color: var(--bg-dark); position: relative;">
         <div class="container nav-container">
             <a href="index.html" class="logo">
                 <img src="src/img/logo-clubit.png" alt="Logo" class="logo-img" loading="lazy">
@@ -110,8 +24,9 @@
                 <a href="about.html">About</a>
                 <a href="registration.html">Registration</a>
                 <a href="information.html">Information</a>
-                <a href="contact.html">Contacts</a>
+                <a href="contact.html" style="color: var(--primary-color);">Contacts</a>
             </nav>
+            <!-- Hamburger Button (mobile only) -->
             <button class="hamburger" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
                 <span></span>
                 <span></span>
@@ -138,34 +53,69 @@
             <a href="about.html" class="sidebar-link"><i class="fa-solid fa-circle-info"></i> About</a>
             <a href="registration.html" class="sidebar-link"><i class="fa-solid fa-file-pen"></i> Registration</a>
             <a href="information.html" class="sidebar-link"><i class="fa-solid fa-newspaper"></i> Information</a>
-            <a href="contact.html" class="sidebar-link"><i class="fa-solid fa-envelope"></i> Contacts</a>
+            <a href="contact.html" class="sidebar-link" style="color: var(--primary-color);"><i class="fa-solid fa-envelope"></i> Contacts</a>
         </nav>
     </aside>
 
-    <!-- Hero Section -->
-    <section class="registration-hero">
+    <!-- Contacts Section -->
+    <section class="contact-hero">
         <div class="container">
-            <h1>Join IT Club</h1>
-            <p>Mari berkembang bersama dan wujudkan ide kreatifmu menjadi nyata di dunia digital.</p>
-        </div>
-    </section>
+            <h1 class="contact-title">Contact Us</h1>
+            
+            <div class="contact-cards">
+                
+                <!-- Contact Person Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3>Contact Person</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-name">
+                            <i class="fa-solid fa-user"></i> Luthfi
+                        </div>
+                        <a href="https://wa.me/6281231550517" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> 081231550517
+                        </a>
+                    </div>
 
-    <!-- Prasyarat Section -->
-    <section class="registration-section">
-        <div class="container">
-            <div class="prerequisite-card">
-                <h2>Prasyarat Pendaftaran</h2>
-                <ul class="prerequisite-list">
-                    <li><i class="fa-solid fa-check-circle"></i> Merupakan siswa/siswi aktif SMKN 1 Surabaya.</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Memiliki ketertarikan tinggi di bidang Teknologi, khususnya Design Graphic atau Programming.</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Berkomitmen untuk aktif mengikuti setiap kegiatan dan pertemuan IT Club.</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Memiliki semangat belajar tinggi dan bersedia bekerja sama dalam tim (Teamwork).</li>
-                    <li><i class="fa-solid fa-check-circle"></i> Bersedia menaati seluruh tata tertib yang berlaku di dalam ekstrakurikuler IT Club.</li>
-                </ul>
-                <div class="registration-cta">
-                    <p style="color: var(--text-muted); margin-bottom: 20px;">Sudah memenuhi prasyarat di atas? Yuk, daftarkan dirimu sekarang!</p>
-                    <a href="#" class="btn btn-primary">Daftar Sekarang <i class="fa-solid fa-arrow-right" style="margin-left: 8px;"></i></a>
+                    <div class="contact-item">
+                        <div class="contact-name">
+                            <i class="fa-solid fa-user"></i> Adit
+                        </div>
+                        <a href="https://wa.me/6285784875082" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-whatsapp"></i> 085784875082
+                        </a>
+                    </div>
                 </div>
+
+                <!-- Instagram Card -->
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-name">
+                            <i class="fa-solid fa-at"></i> Official IT Club
+                        </div>
+                        <a href="https://instagram.com/itclubsmkn1sby" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i> @itclubsmkn1sby
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-name">
+                            <i class="fa-solid fa-at"></i> Recap IT Club
+                        </div>
+                        <a href="https://instagram.com/recapitcsmkn1sby" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands fa-instagram"></i> @recapitcsmkn1sby
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -205,8 +155,8 @@
                     <div class="footer-col">
                         <h4>Social Media</h4>
                         <div class="social-icons">
-                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://instagram.com/itclubsmkn1sby" aria-label="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://wa.me/6281231550517" aria-label="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                             <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                             <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
@@ -248,6 +198,7 @@
         sidebarClose.addEventListener('click', closeSidebar);
         overlay.addEventListener('click', closeSidebar);
 
+        // Close sidebar when a link is clicked
         document.querySelectorAll('.sidebar-link').forEach(link => {
             link.addEventListener('click', closeSidebar);
         });
